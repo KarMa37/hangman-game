@@ -1,0 +1,31 @@
+html {
+    background-color: #284678;
+}
+
+.main-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 2% auto;
+    padding: .25% 0;
+    box-sizing: border-box;
+    height: 97vh;
+    width: 95vw;
+    max-height: 900px;
+    max-width: 600px;
+    background-color: #EFF0F0;
+}
+
+.standard-element {
+    flex-grow: 1;
+    margin: .5% auto;
+    width: 98%;
+    background-color: #000;
+}
+
+.mega-element {
+    flex-grow: 3;
+    margin: .5% auto;
+    width: 98%;
+    background-color: #999;
+}
