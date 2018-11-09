@@ -24,8 +24,15 @@ html {
 }
 
 .mega-element {
-    flex-grow: 3;
     margin: .5% auto;
     width: 98%;
     background-color: #999;
+}
+
+.graphic {
+    flex-grow: 4;
+}
+
+.letters {
+    flex-grow: 3;
 }
