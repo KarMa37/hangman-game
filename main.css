@@ -23,16 +23,25 @@ html {
     background-color: #000;
 }
 
-.mega-element {
+.biggest-element {
     margin: .5% auto;
     width: 98%;
-    background-color: #999;
-}
-
-.graphic {
     flex-grow: 4;
 }
 
-.letters {
+.graphic {
+    background: url("img/grass.png") repeat-x center bottom,
+    url("img/hangmancrop8.png") no-repeat left bottom,
+    url("img/tree.png") no-repeat right bottom,
+    linear-gradient(rgb(133, 164, 204) 0, rgb(208, 229, 242) 100%);
+    background-size: 80%, 45%, 50%;
+}
+
+.big-element {
     flex-grow: 3;
+}
+
+.image-box {
+    width: 80px;
+    height: 100px;
 }
