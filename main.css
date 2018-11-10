@@ -8,25 +8,30 @@ html {
     justify-content: space-between;
     margin: 2% auto;
     padding: .25% 0;
-    box-sizing: border-box;
     height: 97vh;
     width: 95vw;
     max-height: 900px;
     max-width: 600px;
     background-color: #EFF0F0;
+    text-align: center;
+    box-sizing: border-box;
+    border: 2px solid black;
+    border-radius: 25px;
 }
 
 .standard-element {
     flex-grow: 1;
     margin: .5% auto;
     width: 98%;
-    background-color: #000;
 }
 
-.biggest-element {
+.big-element {
+    flex-grow: 8;
     margin: .5% auto;
     width: 98%;
-    flex-grow: 4;
+    box-sizing: border-box;
+    border: 10px solid black;
+    border-radius: 25px;
 }
 
 .graphic {
@@ -37,11 +42,30 @@ html {
     background-size: 80%, 45%, 50%;
 }
 
-.big-element {
-    flex-grow: 3;
+.motto {
+    font-size: 3rem;
 }
 
-.image-box {
-    width: 80px;
-    height: 100px;
+.letters {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+.letter {
+    width: 5%;
+    height: 2.5%;
+    min-width: 20px;
+    padding: 1%;
+    margin: 1%;
+    border: 2px solid gray;
+    border-radius: 25%;
+    cursor: pointer;
+    font-family: 'Amatic SC', cursive;
+    font-size: 2.2rem;
+    font-weight: 700;
+}
+
+.greater-width {
+    transform: scale(2, 1);
 }
