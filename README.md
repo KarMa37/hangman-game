@@ -6,3 +6,5 @@ I used here:
 * JS
 
 ### Link with a working game is in the title.
+
+##### Image taken from https://theinterrobang.com/the-winners-list/
