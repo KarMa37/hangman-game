@@ -15,6 +15,11 @@ const startFunction = (function () {
     let noHitIt = 0;
     const maxHits = 7;
 
+    const sounds = {
+        positive: new Audio('music/positive.wav'),
+        negative: new Audio('music/negative.wav')
+    };
+
     let graphicWrapper = document.getElementById('graphic-id');
     let mottoWrapper = document.getElementById('motto-id');
     let lettersWrapper = document.getElementById('letters-id');
@@ -68,10 +73,12 @@ const startFunction = (function () {
         }
         if (hitIt) {
             buttonsWrapper.classList.add('letter-green');
+            sounds.positive.play();
             showMotto();
         } else {
             buttonsWrapper.classList.add('letter-red');
             buttonsWrapper.setAttribute('onclick', '');
+            sounds.negative.play();
             noHitIt++;
             graphicWrapper.classList.remove(`graphic_${noHitIt - 1}`);
             graphicWrapper.classList.add(`graphic_${noHitIt}`);
