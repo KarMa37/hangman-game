@@ -1,8 +1,8 @@
 let motto = "";
 let categories = [
-    ["gladiator", "star wars", "alien", "the godfather", "mamma mia", "pretty woman", "terminator", 'titanic'],
-    ["gta", "fifa", "quake", "far cry", "the witcher", 'heroes', 'fallout', 'bioshock'],
-    ["gdynia", "milan", "rome", "warsaw", "barcelona", 'paris', 'madrid', 'lisboa']
+    ["gladiator", "star wars", "alien", "the godfather", "aviator", "pretty woman", "terminator", 'titanic'],
+    ["carmageddon", "fifa", "quake", "far cry", "the witcher", 'heroes', 'fallout', 'bioshock'],
+    ["gdynia", "milan", "valletta", "warsaw", "barcelona", 'paris', 'madrid', 'lisboa']
 ];
 let chosenCategory = categories[Math.floor(Math.random() * categories.length)];
 motto = chosenCategory[Math.floor(Math.random() * chosenCategory.length)];
@@ -37,7 +37,7 @@ function showMotto() {
     mottoWrapper.innerHTML = mottoHidden;
 }
 
-function letters() {
+(function letters() {
     let alphabet = "";
     for (let i = 0; i < 26; i++) {
         let element = `letter_${i}`;
@@ -45,9 +45,7 @@ function letters() {
     }
     lettersWrapper.innerHTML = alphabet;
     showMotto();
-}
-
-window.onload = letters;
+})();
 
 String.prototype.changeDash = function (index, letter) {
     if (index > this.length - 1) {
