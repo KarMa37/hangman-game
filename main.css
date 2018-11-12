@@ -1,5 +1,8 @@
 html {
     background-color: #284678;
+    user-select: none;
+    font-family: 'Amatic SC', cursive;
+    font-weight: 400;
 }
 
 .main-box {
@@ -34,7 +37,71 @@ html {
     border-radius: 25px;
 }
 
-.graphic {
+.graphic_0 {
+    background: url("img/grass.png") repeat-x center bottom,
+    url("img/hangmancrop0.png") no-repeat left bottom,
+    url("img/tree.png") no-repeat right bottom,
+    linear-gradient(rgb(133, 164, 204) 0, rgb(208, 229, 242) 100%);
+    background-size: 80%, 45%, 50%;
+}
+
+.graphic_1 {
+    background: url("img/grass.png") repeat-x center bottom,
+    url("img/hangmancrop1.png") no-repeat left bottom,
+    url("img/tree.png") no-repeat right bottom,
+    linear-gradient(rgb(133, 164, 204) 0, rgb(208, 229, 242) 100%);
+    background-size: 80%, 45%, 50%;
+}
+
+.graphic_2 {
+    background: url("img/grass.png") repeat-x center bottom,
+    url("img/hangmancrop2.png") no-repeat left bottom,
+    url("img/tree.png") no-repeat right bottom,
+    linear-gradient(rgb(133, 164, 204) 0, rgb(208, 229, 242) 100%);
+    background-size: 80%, 45%, 50%;
+}
+
+.graphic_3 {
+    background: url("img/grass.png") repeat-x center bottom,
+    url("img/hangmancrop3.png") no-repeat left bottom,
+    url("img/tree.png") no-repeat right bottom,
+    linear-gradient(rgb(133, 164, 204) 0, rgb(208, 229, 242) 100%);
+    background-size: 80%, 45%, 50%;
+}
+
+.graphic_4 {
+    background: url("img/grass.png") repeat-x center bottom,
+    url("img/hangmancrop4.png") no-repeat left bottom,
+    url("img/tree.png") no-repeat right bottom,
+    linear-gradient(rgb(133, 164, 204) 0, rgb(208, 229, 242) 100%);
+    background-size: 80%, 45%, 50%;
+}
+
+.graphic_5 {
+    background: url("img/grass.png") repeat-x center bottom,
+    url("img/hangmancrop5.png") no-repeat left bottom,
+    url("img/tree.png") no-repeat right bottom,
+    linear-gradient(rgb(133, 164, 204) 0, rgb(208, 229, 242) 100%);
+    background-size: 80%, 45%, 50%;
+}
+
+.graphic_6 {
+    background: url("img/grass.png") repeat-x center bottom,
+    url("img/hangmancrop6.png") no-repeat left bottom,
+    url("img/tree.png") no-repeat right bottom,
+    linear-gradient(rgb(133, 164, 204) 0, rgb(208, 229, 242) 100%);
+    background-size: 80%, 45%, 50%;
+}
+
+.graphic_7 {
+    background: url("img/grass.png") repeat-x center bottom,
+    url("img/hangmancrop7.png") no-repeat left bottom,
+    url("img/tree.png") no-repeat right bottom,
+    linear-gradient(rgb(133, 164, 204) 0, rgb(208, 229, 242) 100%);
+    background-size: 80%, 45%, 50%;
+}
+
+.graphic_8 {
     background: url("img/grass.png") repeat-x center bottom,
     url("img/hangmancrop8.png") no-repeat left bottom,
     url("img/tree.png") no-repeat right bottom,
@@ -44,6 +111,7 @@ html {
 
 .motto {
     font-size: 3rem;
+    transform: scale(1.5, 1);
 }
 
 .letters {
@@ -52,7 +120,7 @@ html {
     justify-content: center;
 }
 
-.letter {
+.letter-normal {
     width: 5%;
     height: 2.5%;
     min-width: 20px;
@@ -61,11 +129,51 @@ html {
     border: 2px solid gray;
     border-radius: 25%;
     cursor: pointer;
-    font-family: 'Amatic SC', cursive;
     font-size: 2.2rem;
     font-weight: 700;
 }
 
 .greater-width {
     transform: scale(2, 1);
+}
+
+.letter-green {
+    background-color: green;
+    border: 2px solid green;
+    cursor: default;
+}
+
+.letter-red {
+    background-color: red;
+    border: 2px solid red;
+    cursor: default;
+}
+
+.letter:hover {
+    background-color: #ccc;
+    border: 2px solid #222;
+}
+
+.after-letters {
+    font-size: 3rem;
+    font-weight: 700;
+    transform: scale(1.5, 1);
+}
+
+.smaller {
+    font-size: 2rem;
+}
+
+.reset {
+    color: green;
+    cursor: pointer;
+    padding: 2%;
+    border: 1px solid black;
+    border-radius: 25px;
+    font-size: 2rem;
+}
+
+.reset:hover {
+    color: red;
+    border: 1px solid red;
 }
